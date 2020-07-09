@@ -142,11 +142,7 @@ nav {
 		text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
 	}
 
-	a {
-		padding: 2rem 8rem;
-		border: 3px solid black;
-		margin-bottom: 4rem;
-	}
+	
 }
 
 
@@ -180,34 +176,52 @@ nav {
 }
 
 
+.herobye {
+	min-height: 40vh;
+	width: 100%;
+	margin: auto;
+	background-size: cover;
+	background-position: center;	
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	background: #2D7345;
+
+	h2 { 
+		color: white;
+		margin: 5% auto auto auto;
+		padding-left: 20%;
+		text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
+		font-size: var(--big);
+	}
+}
 
 .hero-images {
-	flex: 1 1 40rem;
-	background: linear-gradient(#dad8dd, #dad1d4);
+	flex: 1 1 20rem;	
 	position: relative;
 	z-index: 1;
 }
 
-.hero-elena {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
 
 .plant {
 	position: absolute;
 	bottom: 0;
-	left: -30%;
-	z-index: -1;
+	left: 10%;	
 	max-height: 80%;
 	transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
-	animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant-shake 2.5s infinite ease alternate-reverse 2s;
-	transform-origin: bottom;
+	// animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant-shake 2.5s infinite ease alternate-reverse 2s;
+	// transform-origin: bottom;
 }
 
-
+.plant1 {
+	animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant1-shake 2.5s infinite ease alternate-reverse 1s;
+	transform-origin: bottom;
+	transform: rotateY(180deg);
+}
 
 .plant2 {
+	animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant-shake 2.5s infinite ease alternate-reverse 2s;
+	transform-origin: bottom;
 	left: 40%;
 }
 
@@ -237,6 +251,15 @@ nav {
 	}
 	to {
 		transform: rotateZ(0deg);
+	}
+}
+
+@keyframes plant1-shake {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(5deg);
 	}
 }
 
@@ -272,6 +295,10 @@ nav {
 		padding: 2rem 0rem;
 		font-family: "Runl Medium";
 	}
+}
+
+.about-life, .about-work {
+	background-color: rgba(117, 117, 117, 0.6);
 }
 
 .about-image {
@@ -348,57 +375,57 @@ nav {
 	grid-row: 1/3;
 }
 
-// CONTACT
+// // CONTACT
 
-.contact {
-	min-height: 90vh;
-	display: flex;
-	flex-wrap: wrap;
+// .contact {
+// 	min-height: 90vh;
+// 	display: flex;
+// 	flex-wrap: wrap;
 
-	img {
-		flex: 1 1 40rem;
-	}
-}
+// 	img {
+// 		flex: 1 1 40rem;
+// 	}
+// }
 
-.form-wrapper {
-	flex: 3 1 40rem;
-	padding: 2rem;
+// .form-wrapper {
+// 	flex: 3 1 40rem;
+// 	padding: 2rem;
 
-	h2 {
-		margin: 5rem 0rem;
-	}
+// 	h2 {
+// 		margin: 5rem 0rem;
+// 	}
 
-	span {
-		font-size: var(--big);
-		color: var(--special-color);
-	}
+// 	span {
+// 		font-size: var(--big);
+// 		color: var(--special-color);
+// 	}
 
-	label {
-		display: block;
-	}
+// 	label {
+// 		display: block;
+// 	}
 
-	input {
-		display: block;
-		margin: 3rem 0rem;
-		background: var(--background-color);
-		color: white;
-		border: none;
-		padding: 1rem;
-	}
+// 	input {
+// 		display: block;
+// 		margin: 3rem 0rem;
+// 		background: var(--background-color);
+// 		color: white;
+// 		border: none;
+// 		padding: 1rem;
+// 	}
 
-	button {
-		padding: 1rem 8rem;
-		background: var(--special-color);
-		color: white;
-		border: none;
-		width: 100%;
-	}
-}
+// 	button {
+// 		padding: 1rem 8rem;
+// 		background: var(--special-color);
+// 		color: white;
+// 		border: none;
+// 		width: 100%;
+// 	}
+// }
 
 // FOOTER
 
 footer {
-	background: var(--background-color);
+	background: #25594A;
 	color: white;
 	display: flex;
 	padding: 3rem 5%;
