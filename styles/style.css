@@ -6,21 +6,6 @@
           box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'Ruhl';
-  src: url(../fonts/FrankRuhlLibre-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'Ruhl Medium';
-  src: url(../fonts/FrankRuhlLibre-Medium.ttf);
-}
-
-@font-face {
-  font-family: 'Vibes';
-  src: url(../fonts/GreatVibes-Regular.ttf);
-}
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -87,13 +72,13 @@ a {
 }
 
 body {
-  font-family: "Ruhl", sans-serif;
+  font-family: 'Vollkorn', serif;
   -webkit-animation: opening 1s ease-in-out;
           animation: opening 1s ease-in-out;
 }
 
 h1 {
-  font-family: "Vibes", sans-serif;
+  font-family: 'Galada', cursive;
 }
 
 /* Nav Section */
@@ -210,7 +195,7 @@ nav {
 }
 
 .herobye {
-  min-height: 40vh;
+  min-height: 10vh;
   width: 100%;
   margin: auto;
   background-size: cover;
@@ -220,15 +205,16 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #2D7345;
+  background: #25594A;
 }
 
 .herobye h2 {
   color: white;
-  margin: 5% auto auto auto;
+  margin: 1.5rem auto;
+  padding-bottom: 1.5rem;
   padding-left: 20%;
   text-shadow: 3px 3px 3px #969696;
-  font-size: var(--big);
+  font-size: var(--header3);
 }
 
 .hero-images {
@@ -236,7 +222,6 @@ nav {
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
   position: relative;
-  z-index: 1;
 }
 
 .plant {
@@ -249,7 +234,7 @@ nav {
 }
 
 .plant1 {
-  animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant1-shake 2.5s infinite ease alternate-reverse 1s;
+  animation: plant1-shake 2.5s infinite ease alternate-reverse 1s;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   -webkit-transform: rotateY(180deg);
@@ -257,7 +242,7 @@ nav {
 }
 
 .plant2 {
-  animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant-shake 2.5s infinite ease alternate-reverse 2s;
+  animation: plant-shake 2.5s infinite ease alternate-reverse 2s;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   left: 40%;
@@ -352,6 +337,11 @@ nav {
   display: none;
 }
 
+.because {
+  padding: 7rem;
+  text-align: center;
+}
+
 .about {
   min-height: 70vh;
   display: -webkit-box;
@@ -369,6 +359,7 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: white;
+  text-align: center;
 }
 
 .about-text h2 {
@@ -385,14 +376,10 @@ nav {
   font-family: "Runl Medium";
 }
 
-.about-life, .about-work {
-  background-color: rgba(117, 117, 117, 0.6);
-}
-
 .about-image {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 20rem;
-          flex: 1 1 20rem;
+      -ms-flex: 1 1 15rem;
+          flex: 1 1 15rem;
   position: relative;
 }
 
@@ -495,7 +482,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3rem 5%;
+  padding: 1.5rem 5%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -522,7 +509,7 @@ footer h4 {
   -webkit-box-flex: 3;
       -ms-flex: 3 1 40rem;
           flex: 3 1 40rem;
-  font-size: calc(1.4rem + 1vw);
+  font-size: calc(1rem + 1vw);
 }
 
 @media screen and (max-width: 842px) {
