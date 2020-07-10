@@ -53,7 +53,7 @@ ul {
 }
 a {
 	text-decoration: none;
-	color: #2D7345;;
+	color: #25594A;
 }
 
 .flex {
@@ -78,7 +78,7 @@ h1 {
 	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 	z-index: 2;
 	position: relative;
-}
+}	
 
 nav {
 	width: 90%;
@@ -87,7 +87,8 @@ nav {
 	align-items: center;
 	min-height: 10vh;
 	padding: 2rem 0rem;
-	color: #2D7345;
+	color: #25594A;
+	
 }
 
 #logo {
@@ -98,11 +99,11 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	flex: 1 1 20rem;
-	color: #2D7345;
+	color: #25594A;
 }
 
 .hero {
-	min-height: 50vh;
+	min-height: 70vh;
 	width: 100%;
 	margin: 0 0 0 auto;
 	background-size: cover;
@@ -110,13 +111,14 @@ nav {
 	position: relative;
 	overflow: hidden;
 	display: flex;
-	background: #2D7345;
+	background: linear-gradient(51deg, rgba(37,89,74,1) 0%, rgba(42,103,63,1) 35%, rgba(45,115,69,1) 100%);
 }
 
-.hero-introduction {
-	
+
+
+.hero-introduction {	
 	text-align: center;
-	background: #2D7345;
+	
 
 	p {
 		padding: 5rem 10rem;
@@ -138,6 +140,7 @@ nav {
 	position: absolute;
 	top: 0%;
 	right: 0%;
+	
 }
 
 .moving-cloud-1 {
@@ -163,91 +166,7 @@ nav {
 }
 
 
-.herobye {
-	min-height: 10vh;
-	width: 100%;
-	margin: auto;
-	background-size: cover;
-	background-position: center;	
-	position: relative;
-	overflow: hidden;
-	display: flex;
-	background: #25594A;
 
-	h2 { 
-		color: white;
-		margin: 1.5rem auto;
-		padding-bottom: 1.5rem;
-		padding-left: 20%;
-		text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
-		font-size: var(--header3);
-	}
-}
-
-.hero-images {
-	flex: 1 1 20rem;	
-	position: relative;
-	
-}
-
-
-.plant {
-	position: absolute;
-	bottom: 0;
-	left: 10%;	
-	max-height: 80%;
-	transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);	
-}
-
-.plant1 {
-	animation: plant1-shake 2.5s infinite ease alternate-reverse 1s;
-	transform-origin: bottom;
-	transform: rotateY(180deg);
-}
-
-.plant2 {
-	animation: plant-shake 2.5s infinite ease alternate-reverse 2s;
-	transform-origin: bottom;
-	left: 40%;
-}
-
-/* ANIMATIONS */
-
-@keyframes opening {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
-@keyframes plant-entrance {
-	from {
-		transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
-	}
-	to {
-		transform: translateY(0%) rotateZ(0deg) rotateX(0deg);
-	}
-}
-
-@keyframes plant-shake {
-	from {
-		transform: rotateZ(-5deg);
-	}
-	to {
-		transform: rotateZ(0deg);
-	}
-}
-
-@keyframes plant1-shake {
-	from {
-		transform: rotateZ(0deg);
-	}
-	to {
-		transform: rotateZ(5deg);
-	}
-}
 
 .burger,
 .menu-check {
@@ -370,24 +289,97 @@ nav {
 
 // FOOTER
 
-footer {
-	background: #25594A;
-	color: white;
+.herobye {
+	min-height: 10vh;
+	width: 100%;
+	margin: auto;
+	background-size: cover;
+	background-position: center;	
+	position: relative;
+	border-bottom: 1px solid #25594A;
 	display: flex;
-	padding: 1.5rem 5%;
-	align-items: center;
-	flex-wrap: wrap;
+	background: #25594A;
 
-	ul {
-		display: flex;
-		flex: 1 1 40rem;
-		justify-content: space-between;
-		align-items: center;
+	h2 { 
+		color: white;
+		margin: 1.5rem auto;
+		padding-bottom: 1rem;
+		padding-left: 20%;
+		text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
+		font-size: var(--header3);
 	}
+}
 
-	h4 {
-		flex: 3 1 40rem;
-		font-size: calc(1rem + 1vw);
+.hero-images {
+	flex: 1 1 20rem;	
+	position: relative;
+	
+}
+
+.border-plant {
+	background:black;
+	overflow: hidden;
+	min-height: 0.5vh;
+}
+
+
+.plant {
+	position: absolute;
+	bottom: 0;
+	left: 10%;	
+	max-height: 200%;
+	transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);	
+	
+	
+}
+
+.plant1 {
+	animation: plant1-shake 2.5s infinite ease alternate-reverse 1s;
+	transform-origin: bottom;
+	
+}
+
+.plant2 {
+	animation: plant-shake 2.5s infinite ease alternate-reverse 2s;
+	transform-origin: bottom;
+	left: 40%;
+}
+
+/* ANIMATIONS */
+
+@keyframes opening {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes plant-entrance {
+	from {
+		transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
+	}
+	to {
+		transform: translateY(0%) rotateZ(0deg) rotateX(0deg);
+	}
+}
+
+@keyframes plant-shake {
+	from {
+		transform: rotateZ(-5deg);
+	}
+	to {
+		transform: rotateZ(0deg);
+	}
+}
+
+@keyframes plant1-shake {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(5deg);
 	}
 }
 
