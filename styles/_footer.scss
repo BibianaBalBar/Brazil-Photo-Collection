@@ -1,0 +1,80 @@
+// FOOTER
+
+.bye {
+	min-height: 10vh;
+	width: 100%;
+	margin: auto;
+	background-size: cover;
+	background-position: center;	
+	position: relative;
+	border-bottom: 1px solid #25594A;
+	display: flex;
+    background: #25594A;
+    
+	h2 { 
+		color: white;
+		margin: 1.5rem auto;
+		padding-bottom: 1rem;
+		padding-left: 20%;
+		text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
+        font-size: var(--header3);        
+	}
+}
+
+.bye-images {
+	flex: 1 1 20rem;	
+	position: relative;
+	
+}
+
+.border-plant {
+	background:black;
+	overflow: hidden;
+	min-height: 0.5vh;
+}
+
+.plant {
+	position: absolute;
+	bottom: 0;
+	left: 10%;	
+	max-height: 200%;
+    transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);	    
+}
+
+.plant1 {
+	animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant1-shake 2.5s infinite ease alternate-reverse 1s;
+	transform-origin: bottom;	
+}
+
+.plant2 {
+	animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant-shake 2.5s infinite ease alternate-reverse 2s;
+	transform-origin: bottom;
+	left: 40%;
+}
+
+@keyframes plant-entrance {
+	from {
+		transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
+	}
+	to {
+		transform: translateY(0%) rotateZ(0deg) rotateX(0deg);
+	}
+}
+
+@keyframes plant-shake {
+	from {
+		transform: rotateZ(-5deg);
+	}
+	to {
+		transform: rotateZ(0deg);
+	}
+}
+
+@keyframes plant1-shake {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(5deg);
+	}
+}

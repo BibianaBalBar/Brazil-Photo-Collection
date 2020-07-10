@@ -15,7 +15,6 @@ html {
   --header4: calc(1.8rem + 1vw);
   --text: calc(0.8rem + 1vw);
   --big: calc(6rem + 1vw);
-  --special-color: #906272;
   --background-color: #414141;
   --gray-text: #525252;
 }
@@ -81,12 +80,33 @@ h1 {
   font-family: 'Galada', cursive;
 }
 
+@-webkit-keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Nav Section */
 .main-head {
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-  position: relative;
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  min-height: 4vh;
+  background-color: white;
 }
 
 nav {
@@ -105,8 +125,8 @@ nav {
 
 #logo {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 20rem;
-          flex: 1 1 20rem;
+      -ms-flex: 1 1 60rem;
+          flex: 1 1 60rem;
 }
 
 .nav-links {
@@ -119,10 +139,16 @@ nav {
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
   color: #25594A;
+  padding-left: 26%;
+}
+
+.burger,
+.menu-check {
+  display: none;
 }
 
 .hero {
-  min-height: 70vh;
+  min-height: 80vh;
   width: 100%;
   margin: 0 0 0 auto;
   background-size: cover;
@@ -157,9 +183,9 @@ nav {
 }
 
 .moving-cloud-1 {
-  opacity: 0.97;
-  -webkit-animation: cloudAnimation 3s infinite alternate ease-in-out;
-          animation: cloudAnimation 3s infinite alternate ease-in-out;
+  opacity: 0.98;
+  -webkit-animation: cloudAnimation 2.8s infinite alternate ease-in-out;
+          animation: cloudAnimation 2.8s infinite alternate ease-in-out;
   z-index: 3;
 }
 
@@ -167,8 +193,8 @@ nav {
   top: 20%;
   z-index: 2;
   opacity: 0.5;
-  -webkit-animation: cloudAnimation 3.5s infinite alternate ease-in-out;
-          animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+  -webkit-animation: cloudAnimation 3.1s infinite alternate ease-in-out;
+          animation: cloudAnimation 3.1s infinite alternate ease-in-out;
 }
 
 @-webkit-keyframes cloudAnimation {
@@ -193,18 +219,13 @@ nav {
   }
 }
 
-.burger,
-.menu-check {
-  display: none;
-}
-
 .because {
   padding: 7rem;
   text-align: center;
 }
 
 .about {
-  min-height: 70vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,7 +358,7 @@ nav {
   grid-row: 1/3;
 }
 
-.herobye {
+.bye {
   min-height: 10vh;
   width: 100%;
   margin: auto;
@@ -351,7 +372,7 @@ nav {
   background: #25594A;
 }
 
-.herobye h2 {
+.bye h2 {
   color: white;
   margin: 1.5rem auto;
   padding-bottom: 1rem;
@@ -360,7 +381,7 @@ nav {
   font-size: var(--header3);
 }
 
-.hero-images {
+.bye-images {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
@@ -383,34 +404,16 @@ nav {
 }
 
 .plant1 {
-  animation: plant1-shake 2.5s infinite ease alternate-reverse 1s;
+  animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant1-shake 2.5s infinite ease alternate-reverse 1s;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
 }
 
 .plant2 {
-  animation: plant-shake 2.5s infinite ease alternate-reverse 2s;
+  animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant-shake 2.5s infinite ease alternate-reverse 2s;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   left: 40%;
-}
-
-/* ANIMATIONS */
-@-webkit-keyframes opening {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes opening {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 @-webkit-keyframes plant-entrance {
@@ -488,7 +491,9 @@ nav {
   }
   /* BURGER */
   .burger {
-    position: relative;
+    position: fixed;
+    right: 0;
+    padding-right: 2%;
     display: block;
     cursor: pointer;
   }
@@ -502,6 +507,7 @@ nav {
   }
   .nav-links {
     background: var(--background-color);
+    background: linear-gradient(51deg, #25594a 0%, #2a673f 35%, #2d7345 100%);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -522,7 +528,12 @@ nav {
   .nav-links a {
     color: white;
     font-size: var(--header3);
+    font-weight: bold;
     text-decoration: underline;
+    z-index: 5;
+  }
+  .cloud-burger {
+    display: none;
   }
   .nav-open {
     -webkit-transform: translateX(-100%);
@@ -562,23 +573,12 @@ nav {
     display: none;
   }
   /* FOOTER */
-  footer ul {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  footer h4 {
+  footer h2 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    text-align: center;
+    text-align: left;
     padding: 1rem;
-  }
-}
-
-@media screen and (max-width: 1056px) {
-  .contact img {
-    display: none;
   }
 }
 

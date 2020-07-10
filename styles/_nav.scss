@@ -1,0 +1,37 @@
+/* Nav Section */
+
+.main-head {
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+	z-index: 5;
+    position: fixed;
+    width: 100%;
+    min-height: 4vh;
+    background-color: white;   
+}	
+
+nav {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	min-height: 10vh;
+	padding: 2rem 0rem;
+    color: #25594A;    
+}
+
+#logo {
+	flex: 1 1 60rem;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	flex: 1 1 20rem;
+    color: #25594A;
+    padding-left: 26%;
+}
+
+.burger,
+.menu-check {
+	display: none;
+}

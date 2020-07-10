@@ -1,0 +1,63 @@
+// INTRO SECTION
+
+.hero {
+	min-height: 80vh;
+	width: 100%;
+	margin: 0 0 0 auto;
+	background-size: cover;
+	background-position: center;	
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	background: linear-gradient(51deg, rgba(37,89,74,1) 0%, rgba(42,103,63,1) 35%, rgba(45,115,69,1) 100%);
+}
+
+.hero-introduction {	
+	text-align: center;
+	
+	p {
+		padding: 5rem 10rem;
+		color: white;
+	}
+
+	h2 {
+		color: white;
+		padding-top: 3rem;
+		text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
+	}	
+}
+
+.cloud {
+	position: absolute;
+	top: 0%;
+	right: 0%;	
+}
+
+.moving-cloud-1 {
+	opacity: 0.98;
+	animation: cloudAnimation 2.8s infinite alternate ease-in-out;
+	z-index: 3;
+}
+
+.moving-cloud-2 {
+	top: 20%;
+	z-index: 2;
+	opacity: 0.5;
+	animation: cloudAnimation 3.1s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimation {
+	from {
+		transform: translate(10%, -10%);
+	}
+	to {
+		transform: translate(0%, 0%);
+	}
+}
+
+// Because SECTION
+
+.because {
+	padding: 7rem;
+	text-align: center;
+}
