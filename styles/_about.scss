@@ -7,39 +7,30 @@
 }
 
 .about-text {
-	background: #25594A;
+	background: linear-gradient(51deg, rgba(37,89,74,1) 0%, rgba(45,119,71,1) 35%, rgba(49,135,78,1) 100%);
 	flex: 2 1 40rem;
 	justify-content: space-around;
 	color: white;
 	text-align: center;
 
-	h2 {
-		padding: 4rem;
-		font-family: "Vibes";
-	}
-
 	div {
 		padding: 3rem 8rem;
 	}
 
-	h3 {
-		padding: 2rem 0rem;
-		font-family: "Runl Medium";
+	p  {
+		text-shadow: 1.2px 1.2px 1.2px rgba(242,203,5,1);
+		line-height: 6rem;
 	}
 }
 
-
+.bold-hero{
+	font-size: 4rem;
+	font-weight: bold;
+}
 
 .about-image {
 	flex: 1 1 15rem;
-	position: relative;
-	h5 {
-		position: absolute;
-		top: 20%;
-		left: 50%;
-		transform: translate(-50%, -20%);
-		letter-spacing: 2rem;
-	}
+	position: relative;	
 
 	img {
 		width: 100%;

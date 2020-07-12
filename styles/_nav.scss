@@ -5,7 +5,6 @@
 	z-index: 5;
     position: fixed;
     width: 100%;
-    min-height: 4vh;
     background-color: white;   
 }	
 
@@ -14,8 +13,8 @@ nav {
 	margin: auto;
 	display: flex;
 	align-items: center;
-	min-height: 10vh;
-	padding: 2rem 0rem;
+	min-height: 4vh;
+	padding: 1.5rem 0rem;
     color: #25594A;    
 }
 
@@ -28,7 +27,8 @@ nav {
 	justify-content: space-around;
 	flex: 1 1 20rem;
     color: #25594A;
-    padding-left: 26%;
+	padding-left: 26%;
+	font-weight: 700;
 }
 
 .burger,

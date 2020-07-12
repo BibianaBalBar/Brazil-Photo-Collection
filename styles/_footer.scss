@@ -9,14 +9,14 @@
 	position: relative;
 	border-bottom: 1px solid #25594A;
 	display: flex;
-    background: #25594A;
+    background: linear-gradient(51deg, rgba(242,203,5,1) 0%, rgba(45,115,69,1) 35%, rgba(37,89,74,1) 100%);
     
 	h2 { 
 		color: white;
 		margin: 1.5rem auto;
 		padding-bottom: 1rem;
 		padding-left: 20%;
-		text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
+		text-shadow: 2px 2px 2px rgba(242,203,5,1);
         font-size: var(--header3);        
 	}
 }

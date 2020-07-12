@@ -9,7 +9,7 @@
 	position: relative;
 	overflow: hidden;
 	display: flex;
-	background: linear-gradient(51deg, rgba(37,89,74,1) 0%, rgba(42,103,63,1) 35%, rgba(45,115,69,1) 100%);
+	background: linear-gradient(51deg, rgba(37,89,74,1) 0%, rgba(45,115,69,1) 35%, rgba(242,203,5,1) 100%);
 }
 
 .hero-introduction {	
@@ -18,12 +18,13 @@
 	p {
 		padding: 5rem 10rem;
 		color: white;
+		text-shadow: 1.2px 1.2px 1.2px rgba(242,203,5,1);
 	}
 
 	h2 {
 		color: white;
 		padding-top: 3rem;
-		text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
+		text-shadow: 3px 3px 3px rgba(242,203,5,1);
 	}	
 }
 
@@ -60,4 +61,5 @@
 .because {
 	padding: 7rem;
 	text-align: center;
+	color: #25594A;   	
 }

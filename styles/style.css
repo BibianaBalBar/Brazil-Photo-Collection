@@ -105,7 +105,6 @@ h1 {
   z-index: 5;
   position: fixed;
   width: 100%;
-  min-height: 4vh;
   background-color: white;
 }
 
@@ -118,8 +117,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 10vh;
-  padding: 2rem 0rem;
+  min-height: 4vh;
+  padding: 1.5rem 0rem;
   color: #25594A;
 }
 
@@ -140,6 +139,7 @@ nav {
           flex: 1 1 20rem;
   color: #25594A;
   padding-left: 26%;
+  font-weight: 700;
 }
 
 .burger,
@@ -158,7 +158,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: linear-gradient(51deg, #25594a 0%, #2a673f 35%, #2d7345 100%);
+  background: linear-gradient(51deg, #25594a 0%, #2d7345 35%, #f2cb05 100%);
 }
 
 .hero-introduction {
@@ -168,12 +168,13 @@ nav {
 .hero-introduction p {
   padding: 5rem 10rem;
   color: white;
+  text-shadow: 1.2px 1.2px 1.2px #f2cb05;
 }
 
 .hero-introduction h2 {
   color: white;
   padding-top: 3rem;
-  text-shadow: 3px 3px 3px #969696;
+  text-shadow: 3px 3px 3px #f2cb05;
 }
 
 .cloud {
@@ -222,6 +223,7 @@ nav {
 .because {
   padding: 7rem;
   text-align: center;
+  color: #25594A;
 }
 
 .about {
@@ -234,7 +236,7 @@ nav {
 }
 
 .about-text {
-  background: #25594A;
+  background: linear-gradient(51deg, #25594a 0%, #2d7747 35%, #31874e 100%);
   -webkit-box-flex: 2;
       -ms-flex: 2 1 40rem;
           flex: 2 1 40rem;
@@ -244,18 +246,18 @@ nav {
   text-align: center;
 }
 
-.about-text h2 {
-  padding: 4rem;
-  font-family: "Vibes";
-}
-
 .about-text div {
   padding: 3rem 8rem;
 }
 
-.about-text h3 {
-  padding: 2rem 0rem;
-  font-family: "Runl Medium";
+.about-text p {
+  text-shadow: 1.2px 1.2px 1.2px #f2cb05;
+  line-height: 6rem;
+}
+
+.bold-hero {
+  font-size: 4rem;
+  font-weight: bold;
 }
 
 .about-image {
@@ -263,15 +265,6 @@ nav {
       -ms-flex: 1 1 15rem;
           flex: 1 1 15rem;
   position: relative;
-}
-
-.about-image h5 {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -20%);
-          transform: translate(-50%, -20%);
-  letter-spacing: 2rem;
 }
 
 .about-image img {
@@ -310,6 +303,10 @@ nav {
   opacity: .7;
 }
 
+.border-gal {
+  border: 0.5rem solid white;
+}
+
 .gallery1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -344,12 +341,45 @@ nav {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.gallery10 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.gallery13 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
 }
 
-.gallery10 {
+.gallery14 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.gallery19 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.gallery20 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
@@ -369,7 +399,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #25594A;
+  background: linear-gradient(51deg, #f2cb05 0%, #2d7345 35%, #25594a 100%);
 }
 
 .bye h2 {
@@ -377,7 +407,7 @@ nav {
   margin: 1.5rem auto;
   padding-bottom: 1rem;
   padding-left: 20%;
-  text-shadow: 3px 3px 3px #969696;
+  text-shadow: 2px 2px 2px #f2cb05;
   font-size: var(--header3);
 }
 
@@ -506,8 +536,7 @@ nav {
     transition: all 0.5s ease;
   }
   .nav-links {
-    background: var(--background-color);
-    background: linear-gradient(51deg, #25594a 0%, #2a673f 35%, #2d7345 100%);
+    background: linear-gradient(51deg, #25594a 0%, #2d7345 35%, #f2cb05 100%);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -517,9 +546,9 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-transition: -webkit-transform 1s ease;
     transition: -webkit-transform 1s ease;
     transition: transform 1s ease;
