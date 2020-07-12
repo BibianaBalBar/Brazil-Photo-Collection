@@ -7,8 +7,8 @@
 }
 
 .about-text {
-	background: linear-gradient(51deg, rgba(37,89,74,1) 0%, rgba(45,119,71,1) 35%, rgba(49,135,78,1) 100%);
-	flex: 2 1 40rem;
+	background: linear-gradient(51deg, rgba(37,89,74,1) 0%, rgba(41,105,63,1) 35%, rgba(55,149,87,1) 100%);
+	flex: 2 1 20rem;
 	justify-content: space-around;
 	color: white;
 	text-align: center;
@@ -19,22 +19,41 @@
 
 	p  {
 		text-shadow: 1.2px 1.2px 1.2px rgba(242,203,5,1);
-		line-height: 6rem;
+		line-height: 10rem;
+		font-size: calc(1.6rem + 1vw);
 	}
 }
 
 .bold-hero{
-	font-size: 4rem;
+	font-size: 4.5rem;
 	font-weight: bold;
+	color: rgba(242,203,5,1);
+	text-shadow: 1.2px 1.2px 1.2px rgba(37,89,74,1);
+
+	a {		
+		font-size: 4.5rem;
+		font-weight: bold;
+		color: rgba(242,203,5,1);
+		transition: font-size 0.5s ease-in-out;
+		
+
+		&:hover {
+			color: rgba(242,203,5,1);
+			text-shadow: 1.2px 1.2px 1.2px rgba(37,89,74,1);
+			font-size: 4.8rem;
+			text-decoration: underline;
+		}
+	}
 }
 
 .about-image {
 	flex: 1 1 15rem;
 	position: relative;	
-
+	
 	img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 	}
 }
+

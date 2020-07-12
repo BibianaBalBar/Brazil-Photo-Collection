@@ -1,5 +1,17 @@
 // GALLERY
 
+
+.gal-title {
+	padding: 7rem;
+	text-align: center;
+	color: #25594A;   	
+	border-bottom: 0.5rem solid rgba(242,203,5,1);
+
+	h1 {
+		font-size: var(--header2);   
+	}	
+}
+
 .gallery {
 	display: grid;
 	min-height: 100vh;
@@ -13,20 +25,8 @@
 	}
 }
 
-.gallery-head {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
-	background: var(--background-color);
-	padding: 5rem 10rem;
-	text-align: center;
-	opacity: .7;
-}
-
 .border-gal {
-	border: 0.5rem solid white;
+	border: 0.5rem solid rgba(242,203,5,1);
 }
 
 .gallery1 {
@@ -74,4 +74,15 @@
 .gallery20 {
 	grid-column: 3/4;
 	grid-row: 1/3;
+}
+
+.gal-bye {
+	padding: 7rem;
+	text-align: center;
+	color: #25594A;   	
+	border-top: 0.5rem solid rgba(242,203,5,1);
+
+	h1 {
+		font-size: var(--header3);   
+	}	
 }
