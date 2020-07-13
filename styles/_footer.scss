@@ -1,7 +1,7 @@
 // FOOTER
 
 .bye {
-	min-height: 10vh;
+	min-height: 5vh;
 	width: 100%;
 	margin: auto;
 	background-size: cover;
@@ -13,7 +13,7 @@
     
 	h2 { 
 		color: white;
-		margin: 2.2rem auto;
+		margin: 0.8rem auto;
 		padding-bottom: 1rem;
 		padding-left: 20%;
 		text-shadow: 2px 2px 2px rgba(242,203,5,1);
@@ -23,8 +23,7 @@
 
 .bye-images {
 	flex: 1 1 20rem;	
-	position: relative;
-	
+	position: relative;	
 }
 
 .border-plant {
@@ -42,12 +41,12 @@
 }
 
 .plant1 {
-	animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant1-shake 2.5s infinite ease alternate-reverse 1s;
+	animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant1-shake 1.5s infinite ease alternate-reverse 1s;
 	transform-origin: bottom;	
 }
 
 .plant2 {
-	animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant-shake 2.5s infinite ease alternate-reverse 2s;
+	animation: plant-entrance 1.5s ease-in-out 0.5s forwards, plant-shake 1.5s infinite ease alternate-reverse 2s;
 	transform-origin: bottom;
 	left: 40%;
 }
@@ -63,7 +62,7 @@
 
 @keyframes plant-shake {
 	from {
-		transform: rotateZ(-5deg);
+		transform: rotateZ(-6deg);
 	}
 	to {
 		transform: rotateZ(0deg);
@@ -75,6 +74,6 @@
 		transform: rotateZ(0deg);
 	}
 	to {
-		transform: rotateZ(5deg);
+		transform: rotateZ(6deg);
 	}
 }

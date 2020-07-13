@@ -24,9 +24,6 @@ h1 {
 }
 
 li,
-button,
-label,
-input,
 p,
 a {
 	font-size: var(--text);
@@ -84,9 +81,33 @@ h1 {
 @import "intro";
 @import "about";
 @import "gallery";
+@import "popup";
 @import "footer";
 
 // Media
+
+@media screen and (max-width: 765px) {	
+	.moving-cloud-1 {
+		display: none;
+	}
+
+	.moving-cloud-2 {
+		display: none;
+	}
+
+	.bold-hero{
+		font-size: 2.5rem;		
+	
+		a {		
+			font-size: 2.5rem;			
+			transition: font-size 0.5s ease-in-out;			
+	
+			&:hover {					
+				font-size: 2.8rem;				
+			}
+		}
+	}
+}
 
 @media screen and (max-width: 842px) {
 	.hero {
@@ -164,9 +185,22 @@ h1 {
 		}
 	}
 
+	.bold-hero{
+		font-size: 3rem;		
+	
+		a {		
+			font-size: 3rem;			
+			transition: font-size 0.5s ease-in-out;			
+	
+			&:hover {					
+				font-size: 3.3rem;				
+			}
+		}
+	}
+
 	/* GALERRY */
 	.gallery {
-		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
 
 		img {
 			grid-row: auto;
@@ -174,34 +208,21 @@ h1 {
 		}
 	}
 
-	.gallery-head {
-		display: none;
-	}
-
-	/* CONTACT */
-	.contact {
-		img {
-			display: none;
-		}
-	}
-
 	/* FOOTER */
-	footer {
-		h2 {
-			order: 2;
-			text-align: left;
-			padding: 1rem;
-		}
+	
+	.tks-for-visiting {
+		display: none;
 	}
 }
 
 
-@media screen and (max-width: 1056px) {
-	// .contact {
-	// 	img {
-	// 		display: none;
-	// 	}
-	// }
+@media screen and (max-width: 1340px) {
+	
+	.tks-for-visiting {
+		h2 {
+			font-size: calc(1.3rem + 1vw);
+		}
+	}
 }
 
 
