@@ -23,25 +23,23 @@ links.forEach(link => {
 
 // pop up
 
-document.addEventListener("DOMContentLoaded", function(){
-    let thumbnails = document.querySelectorAll(".image-popup");
-    let popupBackground = document.querySelector("#popup-background");
-    let popupTitle = document.querySelector("#popup-title");
-    let popupImage = document.querySelector("#popup-image");
+const modal = document.querySelector(".modal");
+const previews = document.querySelectorAll(".gallery img");
+const original = document.querySelector(".full-img");
 
-    for (let i = 0; i < thumbnails.length; i++) {
-        thumbnails[i].addEventListener("click", function(){
-            popupBackground.style.display = "block";
-            popupTitle.innerHTML = this.alt;
-            popupImage.src = this.src;
-        })
+previews.forEach((preview) => {
+    preview.addEventListener('click', () => {
+        modal.classList.add("open");
+        original.classList.add("open");
+        //dynamic change text and img
+        const originalSrc = preview.getAttribute("data-original");
+        original.src = `./img/${originalSrc}`;        
+    });
+});
+
+modal.addEventListener('click', (e) => {
+    if (e.target.classList.contains("modal")) {
+        modal.classList.remove("open");
+        original.classList.remove("open");
     }
-    popupBackground.addEventListener("click", function(){
-        popupBackground.style.display = "none";
-    })
-    document.addEventListener("keydown", function(e){
-        if (e.keyCode == 27) {
-            popupBackground.style.display = "none";
-        }
-    })
-})
+});
