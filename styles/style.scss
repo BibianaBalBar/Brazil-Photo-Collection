@@ -86,28 +86,6 @@ h1 {
 
 // Media
 
-@media screen and (max-width: 765px) {	
-	.moving-cloud-1 {
-		display: none;
-	}
-
-	.moving-cloud-2 {
-		display: none;
-	}
-
-	.bold-hero{
-		font-size: 2.5rem;		
-	
-		a {		
-			font-size: 2.5rem;			
-			transition: font-size 0.5s ease-in-out;			
-	
-			&:hover {					
-				font-size: 2.8rem;				
-			}
-		}
-	}
-}
 
 @media screen and (max-width: 842px) {
 	.hero {
@@ -120,6 +98,14 @@ h1 {
 		}
 	}
 
+	.moving-cloud-1 {
+		display: none;
+	}
+
+	.moving-cloud-2 {
+		display: none;
+	}
+	
 	/* BURGER */
 	.burger {
 		position: fixed;
@@ -186,30 +172,25 @@ h1 {
 	}
 
 	.bold-hero{
-		font-size: 3rem;		
+		font-size: 2.5rem;		
 	
 		a {		
-			font-size: 3rem;			
+			font-size: 2.5rem;			
 			transition: font-size 0.5s ease-in-out;			
 	
 			&:hover {					
-				font-size: 3.3rem;				
+				font-size: 2.8rem;				
 			}
 		}
 	}
 
 	/* GALERRY */
 	.gallery {
-		grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-
-		img {
-			grid-row: auto;
-			grid-column: auto;
-		}
+		display: block;		
 	}
 
-	/* FOOTER */
 	
+	/* FOOTER */	
 	.tks-for-visiting {
 		display: none;
 	}

@@ -182,14 +182,14 @@ nav {
 }
 
 .moving-cloud-1 {
-  opacity: 0.98;
+  opacity: 0.93;
   -webkit-animation: cloudAnimation 2.8s infinite alternate ease-in-out;
           animation: cloudAnimation 2.8s infinite alternate ease-in-out;
   z-index: 3;
 }
 
 .moving-cloud-2 {
-  top: 20%;
+  top: 14%;
   z-index: 2;
   opacity: 0.5;
   -webkit-animation: cloudAnimation 3.1s infinite alternate ease-in-out;
@@ -309,6 +309,9 @@ nav {
   min-height: 100vh;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-auto-flow: column;
   position: relative;
 }
 
@@ -609,32 +612,18 @@ nav {
   }
 }
 
-@media screen and (max-width: 765px) {
-  .moving-cloud-1 {
-    display: none;
-  }
-  .moving-cloud-2 {
-    display: none;
-  }
-  .bold-hero {
-    font-size: 2.5rem;
-  }
-  .bold-hero a {
-    font-size: 2.5rem;
-    -webkit-transition: font-size 0.5s ease-in-out;
-    transition: font-size 0.5s ease-in-out;
-  }
-  .bold-hero a:hover {
-    font-size: 2.8rem;
-  }
-}
-
 @media screen and (max-width: 842px) {
   .hero {
     width: 100%;
   }
   .hero-introduction p {
     padding: 5rem 3rem;
+  }
+  .moving-cloud-1 {
+    display: none;
+  }
+  .moving-cloud-2 {
+    display: none;
   }
   /* BURGER */
   .burger {
@@ -703,24 +692,19 @@ nav {
     padding: 3rem;
   }
   .bold-hero {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .bold-hero a {
-    font-size: 3rem;
+    font-size: 2.5rem;
     -webkit-transition: font-size 0.5s ease-in-out;
     transition: font-size 0.5s ease-in-out;
   }
   .bold-hero a:hover {
-    font-size: 3.3rem;
+    font-size: 2.8rem;
   }
   /* GALERRY */
   .gallery {
-    -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-  }
-  .gallery img {
-    grid-row: auto;
-    grid-column: auto;
+    display: block;
   }
   /* FOOTER */
   .tks-for-visiting {

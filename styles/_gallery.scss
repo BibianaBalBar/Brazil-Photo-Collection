@@ -16,7 +16,9 @@
 	display: grid;
 	min-height: 100vh;
 	grid-template-columns: repeat(4, 1fr);
-	position: relative;
+	grid-template-rows: auto;
+	grid-auto-flow: column;
+	position: relative;	
 }
 
 .img-container {
