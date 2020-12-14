@@ -15,8 +15,6 @@ html {
   --header4: calc(2rem + 1vw);
   --text: calc(0.8rem + 1vw);
   --big: calc(6rem + 1vw);
-  --background-color: #414141;
-  --gray-text: #525252;
 }
 
 h1 {
@@ -166,56 +164,16 @@ nav {
 .hero-introduction p {
   padding: 5rem 10rem;
   color: white;
-  text-shadow: 1.2px 1.2px 1.2px #f2cb05;
 }
 
 .hero-introduction h2 {
   color: white;
   padding-top: 3rem;
-  text-shadow: 3px 3px 3px #f2cb05;
 }
 
-.cloud {
-  position: absolute;
-  top: 0%;
-  right: 0%;
-}
-
-.moving-cloud-1 {
-  opacity: 0.93;
-  -webkit-animation: cloudAnimation 2.8s infinite alternate ease-in-out;
-          animation: cloudAnimation 2.8s infinite alternate ease-in-out;
-  z-index: 3;
-}
-
-.moving-cloud-2 {
-  top: 14%;
-  z-index: 2;
-  opacity: 0.5;
-  -webkit-animation: cloudAnimation 3.1s infinite alternate ease-in-out;
-          animation: cloudAnimation 3.1s infinite alternate ease-in-out;
-}
-
-@-webkit-keyframes cloudAnimation {
-  from {
-    -webkit-transform: translate(10%, -10%);
-            transform: translate(10%, -10%);
-  }
-  to {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-  }
-}
-
-@keyframes cloudAnimation {
-  from {
-    -webkit-transform: translate(10%, -10%);
-            transform: translate(10%, -10%);
-  }
-  to {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-  }
+.jesus-svg {
+  padding-top: 5rem;
+  margin: auto auto auto 10rem;
 }
 
 .because {
@@ -253,21 +211,17 @@ nav {
 }
 
 .about-text p {
-  text-shadow: 1.2px 1.2px 1.2px #f2cb05;
-  line-height: 10rem;
+  line-height: 8rem;
   font-size: calc(1.6rem + 1vw);
 }
 
 .bold-hero {
   font-size: 4.5rem;
-  font-weight: bold;
   color: #f2cb05;
-  text-shadow: 1.2px 1.2px 1.2px rgba(252, 252, 252, 0.9);
 }
 
 .bold-hero a {
   font-size: 4.5rem;
-  font-weight: bold;
   color: #f2cb05;
   -webkit-transition: font-size 0.5s ease-in-out;
   transition: font-size 0.5s ease-in-out;
@@ -275,7 +229,6 @@ nav {
 
 .bold-hero a:hover {
   font-size: 4.8rem;
-  text-decoration: underline;
 }
 
 .about-image {
@@ -618,12 +571,7 @@ nav {
   }
   .hero-introduction p {
     padding: 5rem 3rem;
-  }
-  .moving-cloud-1 {
-    display: none;
-  }
-  .moving-cloud-2 {
-    display: none;
+    font-size: 1.5rem;
   }
   /* BURGER */
   .burger {
@@ -667,7 +615,7 @@ nav {
     text-decoration: underline;
     z-index: 5;
   }
-  .cloud-burger {
+  .jesus-svg {
     display: none;
   }
   .nav-open {
@@ -705,6 +653,12 @@ nav {
   /* GALERRY */
   .gallery {
     display: block;
+  }
+  .about {
+    display: block;
+  }
+  .about-text p {
+    line-height: 4rem;
   }
   /* FOOTER */
   .tks-for-visiting {

@@ -17,43 +17,18 @@
 	
 	p {
 		padding: 5rem 10rem;
-		color: white;
-		text-shadow: 1.2px 1.2px 1.2px rgba(242,203,5,1);
+		color: white;		
 	}
 
 	h2 {
 		color: white;
-		padding-top: 3rem;
-		text-shadow: 3px 3px 3px rgba(242,203,5,1);
+		padding-top: 3rem;		
 	}	
 }
 
-.cloud {
-	position: absolute;
-	top: 0%;
-	right: 0%;	
-}
-
-.moving-cloud-1 {
-	opacity: 0.93;
-	animation: cloudAnimation 2.8s infinite alternate ease-in-out;
-	z-index: 3;
-}
-
-.moving-cloud-2 {
-	top: 14%;
-	z-index: 2;
-	opacity: 0.5;
-	animation: cloudAnimation 3.1s infinite alternate ease-in-out;
-}
-
-@keyframes cloudAnimation {
-	from {
-		transform: translate(10%, -10%);
-	}
-	to {
-		transform: translate(0%, 0%);
-	}
+.jesus-svg {
+  padding-top: 5rem;
+  margin: auto auto auto 10rem;
 }
 
 // Because SECTION

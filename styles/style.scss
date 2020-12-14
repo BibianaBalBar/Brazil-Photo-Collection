@@ -92,16 +92,9 @@ h1 {
 
 	.hero-introduction {
 		p {
-			padding: 5rem 3rem;
+      padding: 5rem 3rem;
+      font-size: 1.5rem;
 		}
-	}
-
-	.moving-cloud-1 {
-		display: none;
-	}
-
-	.moving-cloud-2 {
-		display: none;
 	}
 	
 	/* BURGER */
@@ -140,9 +133,10 @@ h1 {
 		}
 	}
 
-	.cloud-burger {
-		display: none;
-	}
+  
+  .jesus-svg {
+    display: none;
+  }
 
 	.nav-open {
 		transform: translateX(-100%);
@@ -185,7 +179,15 @@ h1 {
 	/* GALERRY */
 	.gallery {
 		display: block;		
-	}
+  }
+  
+  .about {
+    display: block;
+  }
+
+  .about-text p {
+    line-height: 4rem;
+  }
 
 	
 	/* FOOTER */	
