@@ -7,4 +7,4 @@ Photo collection of brazilian landscapes - responsive web site.
 CSS Sass - grid system, flex box and animations\
 Vanilla JS
 
-![brazil](https://github.com/BibianaBalBar/Brazil-Photo-Collection/blob/main/img/brazil1.gif)
+![brazil](https://github.com/BibianaBalBar/Brazil-Photo-Collection/blob/master/img/brazil.gif)
