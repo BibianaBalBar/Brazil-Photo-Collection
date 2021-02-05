@@ -46,7 +46,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #25594A;
+  color: #25594a;
 }
 
 .flex {
@@ -66,13 +66,13 @@ a {
 }
 
 body {
-  font-family: 'Vollkorn', serif;
+  font-family: "Vollkorn", serif;
   -webkit-animation: opening 1s ease-in-out;
           animation: opening 1s ease-in-out;
 }
 
 h1 {
-  font-family: 'Galada', cursive;
+  font-family: "Galada", cursive;
 }
 
 @-webkit-keyframes opening {
@@ -663,6 +663,18 @@ nav {
   /* FOOTER */
   .tks-for-visiting {
     display: none;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .hero-introduction {
+    padding: 2rem;
+  }
+  .hero-introduction p {
+    padding: 1rem;
+  }
+  .jesus-svg {
+    margin: auto;
   }
 }
 
